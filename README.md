@@ -8,4 +8,4 @@ Criado o componente Button para o Navbar.
 Criado o componente SpaceContainer responsável pelo lado esquerdo da página de cadastro.
 Configurado as imagens de logo das plataformas.
 
-Criado o formulario
+Criado o formulario.

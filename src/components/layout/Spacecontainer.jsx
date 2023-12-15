@@ -1,13 +1,13 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
-const StyledFlex = styled.div` 
+const StyledFlex = styled.div`
   display: flex;
-  background-color: ${props => props.theme.primary};
+  background-color: ${(props) => props.theme.primary};
   width: 100%;
   height: 54%;
 `
 
-const StyledContent = styled.div` 
+const StyledContent = styled.div`
   width: 50%;
   height: 35vh;
   margin-top: 9%;
@@ -16,18 +16,18 @@ const StyledContent = styled.div`
 `
 
 const Title1 = styled.p`
-  color: ${props => props.theme.colorText};
+  color: ${(props) => props.theme.colorText};
   font-size: 24px;
 `
 
 const Title2 = styled.p`
-  color: ${props => props.theme.colorText1};
+  color: ${(props) => props.theme.colorText1};
   font-size: 15px;
   margin-top: 20px;
   padding: 0px 90px 0px 0px;
 `
 const Title3 = styled.p`
-  color: ${props => props.theme.colorText2};
+  color: ${(props) => props.theme.colorText2};
   font-size: 15px;
   margin-top: 60px;
 `
@@ -43,12 +43,11 @@ const StyledLogo1 = styled.span`
   background-repeat: no-repeat;
   background-position: left;
   background-size: cover;
-  margin-top: 2%; 
+  margin-top: 2%;
   margin-left: 0%;
   display: flex;
   width: 50%;
   height: 56%;
-   
 `
 
 const StyledLogo2 = styled.span`
@@ -56,7 +55,7 @@ const StyledLogo2 = styled.span`
   background-repeat: no-repeat;
   background-position: left;
   background-size: cover;
-  margin-top: 2%; 
+  margin-top: 2%;
   margin-right: 86%;
   display: flex;
   width: 50%;
@@ -64,36 +63,36 @@ const StyledLogo2 = styled.span`
   margin-left: 15px;
 `
 
-const StyledForm = styled.div` 
-  background-color: #3711e2;
+const StyledForm = styled.div`
   width: 50%;
   height: 90vh;
   margin: 40px;
   margin-top: 10vh;
-   
-   
 `
 
 export default function SpaceContainer({ children }) {
   return (
-    <StyledFlex>
-      <StyledContent>
-        <Title1>
-          <h1>Inscreva-se gratuitamente</h1>
-        </Title1>
-        <Title2>
-          <h2>Acompanhe de perto os processos do mundo ágil através de episódios com pessoas da área</h2>
-        </Title2>
-        <Title3>
-          <h3>Disponíveis nas principais plataformas</h3>
-        </Title3>
-        <Logo>
-          <StyledLogo1 />
-          <StyledLogo2 />
-        </Logo>
+    <>
+      <StyledFlex>
+        <StyledContent>
+          <Title1>
+            <h1>Inscreva-se gratuitamente</h1>
+          </Title1>
+          <Title2>
+            <h2>
+              Acompanhe de perto os processos do mundo ágil através de episódios com pessoas da área
+            </h2>
+          </Title2>
+          <Title3>
+            <h3>Disponíveis nas principais plataformas</h3>
+          </Title3>
+          <Logo>
+            <StyledLogo1 />
+            <StyledLogo2 />
+          </Logo>
         </StyledContent>
-      <StyledForm>2</StyledForm>
-    </StyledFlex>
+        <StyledForm>{children}</StyledForm>
+      </StyledFlex>
+    </>
   )
 }
-    
