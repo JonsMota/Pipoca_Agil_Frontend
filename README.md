@@ -9,3 +9,5 @@ Criado o componente SpaceContainer responsável pelo lado esquerdo da página de
 Configurado as imagens de logo das plataformas.
 
 Criado o formulario.
+Criado o componente Input e o Button do cadastro.
+E passado color para o app.js.

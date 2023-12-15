@@ -2,6 +2,8 @@ import styled from 'styled-components'
 
 import Navbar from '@/components/layout/Navbar'
 import SpaceContainer from '@/components/layout/SpaceContainer'
+import Input from '@/components/layout/inputs/Input'
+import { ButtonBlue } from '@/components/layout/inputs/Button'
 
 const FormContainerOut = styled.div`
   border: 1px solid ${(props) => props.theme.inputBorder};
@@ -10,25 +12,28 @@ const FormContainerOut = styled.div`
 `
 
 const FormContainer = styled.div`
-  margin-top: 20px;
-  padding-top: 10px;
-  padding: 40px;
-`
+  padding: 0px 40px 40px 40px;
+`  
 
 const Form = styled.form`
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
+  padding-top: 30px;
   margin: 20px 0;
   gap: 20px;
 `
 
 const Text = styled.p`
   text-align: center;
+  color: rgba(156, 156, 156, 1);
 `
 
 const Title = styled.p`
   padding: 30px 0px 0px 0px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  
 `
 
 function RegisterPage() {
@@ -37,19 +42,45 @@ function RegisterPage() {
       <Navbar />
       <SpaceContainer>
         <FormContainerOut>
-          <Title>Cadastro</Title>
+          <Title>
+            <h2>Cadastro</h2>
+          </Title>
           <FormContainer>
             <Form>
-              <input type="text" placeholder="Digite seu nome completo" required />
-              <input type="email" placeholder="Digite seu e-mail" required />
-              <input type="number" placeholder="(11) 12345-6789" required />
-              <input type="date" placeholder="DD/MM/AAAA" required />
-              <input type="password" placeholder="Digite sua senha" required />
-              <input type="password" placeholder="A senha deve ser idêntica a anterior" required />
-              <button>Cadastrar</button>
+              <Input 
+                type="text" 
+                label="Nome completo" 
+                placeholder="Digite seu nome completo" 
+              />
+              <Input 
+                type="email" 
+                label="E-mail" 
+                placeholder="Digite seu e-mail"
+              />
+              <Input 
+                type="number" 
+                label="Telefone" 
+                placeholder="(11) 12345-6789"
+              />
+              <Input 
+                type="date" 
+                label="Data de nascimento" 
+                placeholder="DD/MM/AAAA" 
+              />
+              <Input 
+                type="password" 
+                label="Senha" 
+                placeholder="Digite sua senha"
+              />
+              <Input 
+                type="password" 
+                label="Confirmar senha" 
+                placeholder="A senha deve ser idêntica a anterior"
+              />
+              <ButtonBlue>Cadastrar</ButtonBlue>
             </Form>
             <Text>
-              Já possui uma conta? <a href="#">login</a>
+              Já possui uma conta? <a href="#"> login</a>
             </Text>
           </FormContainer>
         </FormContainerOut>
