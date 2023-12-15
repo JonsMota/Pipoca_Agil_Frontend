@@ -3,3 +3,4 @@ Configurado o Prettier, que é uma forma de formatar o código automaticamente p
 Exemplo mais comum de uso é a utilizção de  aspas, ponto e vírgula e espaçamento.
 
 Instalado e configurado o Styled Components.
+Criado a página de cadastro "register" e o componente Navbar.
