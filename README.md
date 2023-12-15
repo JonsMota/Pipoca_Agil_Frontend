@@ -4,3 +4,4 @@ Exemplo mais comum de uso é a utilizção de  aspas, ponto e vírgula e espaça
 
 Instalado e configurado o Styled Components.
 Criado a página de cadastro "register" e o componente Navbar.
+Criado o componente Button para o Navbar.

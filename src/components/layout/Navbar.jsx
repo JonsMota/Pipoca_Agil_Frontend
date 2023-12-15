@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import { Button } from './inputs/Button'
+
 const StyledNavbar = styled.div`
   background-color: ${(props) => props.theme.white};
   height: 80px;
@@ -36,11 +38,8 @@ const StyledBlog = styled.span`
 `
 
 const StyledLogin = styled.span`
-  margin-left: 600px;
+  margin-left: 850px;
   margin-right: 50px;
-  border-radius: 25px;
-
-  font-size: 20px;
 `
 
 function Navbar() {
@@ -53,7 +52,7 @@ function Navbar() {
       <StyledProjetos>Projetos</StyledProjetos>
       <StyledBlog>Blog</StyledBlog>
       <StyledLogin>
-        <button>Login</button>
+        <Button>Login</Button>
       </StyledLogin>
     </StyledNavbar>
   )
